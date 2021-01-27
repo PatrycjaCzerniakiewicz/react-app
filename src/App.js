@@ -7,6 +7,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom"
+import SearchView from './components/SearchView/SearchView';
 
 function App() {
   
@@ -21,10 +22,9 @@ function App() {
               <HeroFeatured />
             </Route>
             <Route path="/search:name">
-
+              <SearchView />
             </Route>
             <Route path="/hero/:id">
-
             </Route>
           </Switch> 
         </div> 
